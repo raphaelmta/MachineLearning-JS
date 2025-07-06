@@ -1,0 +1,44 @@
+# Arquivo .gitignore para um projeto React / Node.js
+
+# 1. Dependências
+# A pasta node_modules contém todos os pacotes de terceiros.
+# Ela é sempre recriada localmente ao rodar "npm install".
+# É a pasta mais importante a ser ignorada.
+node_modules/
+
+# 2. Arquivos de Build e Produção
+# Esta pasta contém o código compilado e otimizado.
+# Como explicado acima, ela é gerada a partir do código-fonte e não deve ser versionada.
+dist/
+build/
+
+# 3. Logs
+# Arquivos de log gerados pelo npm em caso de erros.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 4. Arquivos de Ambiente (Segurança)
+# Estes arquivos geralmente contêm chaves de API, senhas de banco de dados e outras
+# informações sensíveis. NUNCA devem ir para o GitHub.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 5. Arquivos de Sistema Operacional
+# Arquivos gerados automaticamente pelo macOS, Windows e Linux.
+.DS_Store
+Thumbs.db
+Leiame.txt
+
+
+# 6. Arquivos de Editor de Código
+# Configurações específicas do editor de código do usuário (ex: VSCode).
+.vscode/
+
+# 7. Relatórios de Testes
+# Pasta gerada por ferramentas de teste de cobertura de código.
+coverage/
